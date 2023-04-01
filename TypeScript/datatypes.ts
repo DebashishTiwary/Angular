@@ -30,3 +30,27 @@ let getperson=array1.find((getperson)=>getperson==="Debashish");
 console.log(getperson);
 let sum=array.reduce((accumulator,currentvalue)=>accumulator+currentvalue);
 console.log(sum);
+
+//enum
+enum Color{
+    Red,
+    Green,
+    Blue
+}
+let c: Color = Color.Blue;
+
+
+//tuples
+let swapNumbs: [firstNumber: number,secondNumber: number];
+function swapNumbers(num1:number,num2:number):[number,number]{
+    return [num2,num1]
+}
+swapNumbs=swapNumbers(10,20);
+console.log(swapNumbs[0]+" "+swapNumbs[1]);
+
+//any(takes and updates value of any type of variable)
+let department :any;
+department="Computer Science";
+department=10;
+//genrally dont try to use any
+

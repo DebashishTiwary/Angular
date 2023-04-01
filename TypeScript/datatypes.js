@@ -24,5 +24,20 @@ let result = array.filter((num) => num > 2);
 console.log(result);
 let getperson = array1.find((getperson) => getperson === "Debashish");
 console.log(getperson);
-let sum = array.reduce((i, j) => i + j);
+let sum = array.reduce((accumulator, currentvalue) => accumulator + currentvalue);
 console.log(sum);
+//enum
+var Color;
+(function (Color) {
+    Color[Color["Red"] = 0] = "Red";
+    Color[Color["Green"] = 1] = "Green";
+    Color[Color["Blue"] = 2] = "Blue";
+})(Color || (Color = {}));
+let c = Color.Blue;
+//tuples
+let swapNumbs;
+function swapNumbers(num1, num2) {
+    return [num2, num1];
+}
+swapNumbs = swapNumbers(10, 20);
+console.log(swapNumbs[0] + " " + swapNumbs[1]);
