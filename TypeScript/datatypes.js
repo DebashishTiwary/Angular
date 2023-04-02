@@ -41,3 +41,8 @@ function swapNumbers(num1, num2) {
 }
 swapNumbs = swapNumbers(10, 20);
 console.log(swapNumbs[0] + " " + swapNumbs[1]);
+//any(takes and updates value of any type of variable)
+let department;
+department = "Computer Science";
+department = 10;
+//genrally dont try to use any
